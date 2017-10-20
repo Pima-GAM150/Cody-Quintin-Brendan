@@ -310,8 +310,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 176893491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 51.5, z: 73.5}
-  m_LocalScale: {x: 374.68484, y: 374.68442, z: 374.68442}
+  m_LocalPosition: {x: -0.31001, y: 222.9, z: 107}
+  m_LocalScale: {x: 1278.547, y: 1278.5453, z: 1278.5453}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -561,12 +561,12 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.26
+    y: 0
     width: 1
-    height: 0.55
+    height: 1
   near clip plane: 2.7
   far clip plane: 999.45
-  field of view: 72
+  field of view: 114
   orthographic: 0
   orthographic size: 7.7470446
   m_Depth: -1.2
@@ -591,7 +591,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1073296881}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.46243542, y: 0.19586387, z: 4.29}
+  m_LocalPosition: {x: -0.078, y: 0.1, z: 4.29}
   m_LocalScale: {x: 0.10687206, y: 0.12053161, z: 1}
   m_Children: []
   m_Father: {fileID: 1201120082}
@@ -807,7 +807,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.03
-  m_GravityScale: 0.99
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 1201120084}
   moveSpeed: 20
-  jumpPower: 8
+  jumpPower: 14
   spriteRenderer: {fileID: 1201120081}
   walkingAnimation:
   - {fileID: 21300000, guid: 164cd9b2819d38a4399b63104306ec43, type: 3}
@@ -941,8 +941,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203433269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 28.38, z: 16.14}
-  m_LocalScale: {x: 151.74593, y: 151.74577, z: 151.74577}
+  m_LocalPosition: {x: -1.9, y: 88.1, z: 16.14}
+  m_LocalScale: {x: 247.12335, y: 384.46225, z: 247.12328}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
