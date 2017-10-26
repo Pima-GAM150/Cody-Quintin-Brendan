@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1592192988407778, guid: 42c0abfa74489984f82dab0b54e368b6, type: 2}
-  spawnRate: 0
+  spawnRate: 2
 --- !u!4 &1746623
 Transform:
   m_ObjectHideFlags: 0
@@ -869,15 +869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ef65e0ae627614cbbceea3a476d384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  grounded: 0
-  groundCheckRadius: 0.2
-  groundLayer: {}
-  groundCheck: {fileID: 0}
-  jumpHeight: 5
-  myRB: {fileID: 0}
-  myAnim: {fileID: 0}
-  facingRight: 0
 --- !u!1 &1203433269
 GameObject:
   m_ObjectHideFlags: 0
