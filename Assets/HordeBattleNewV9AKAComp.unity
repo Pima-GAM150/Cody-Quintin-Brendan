@@ -443,7 +443,7 @@ Transform:
   m_LocalScale: {x: 14.5929985, y: 14.496155, z: 14.592988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615101117
 GameObject:
@@ -594,7 +594,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937949907
 GameObject:
@@ -866,6 +866,7 @@ GameObject:
   - component: {fileID: 1201120088}
   - component: {fileID: 1201120089}
   - component: {fileID: 1201120090}
+  - component: {fileID: 1201120091}
   m_Layer: 0
   m_Name: playerfin
   m_TagString: Untagged
@@ -1039,15 +1040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d45cbbe31ffd924ab5d8c063e6c91f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealth: 100
-  currentHealth: 0
-  damaged: 0
-  damagedColour:
-    r: 0
-    g: 0
-    b: 0
-    a: 0.5
-  smoothColour: 5
 --- !u!114 &1201120090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,6 +1049,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3844f725b25b0649addf92b16833fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1201120091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201120080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4922e139a97d5146861023f04c66edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   max_health: 100
@@ -1309,10 +1312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bf95d57b2523c4288403be6615fe02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
-  damageRate: 0
-  pushBackForce: 10
-  nextDamage: 0
 --- !u!50 &1452494709
 Rigidbody2D:
   serializedVersion: 4
@@ -1341,10 +1340,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1452494704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464b962e3fc0eff4bb5cb0d45832af84, type: 3}
+  m_Script: {fileID: 11500000, guid: 211582b1c8847fd408a6de342d1501b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 50
 --- !u!114 &1452494711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1518,7 @@ Transform:
   m_LocalScale: {x: 11.066252, y: 8.218944, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1636531137
 Prefab:
@@ -1589,5 +1588,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
