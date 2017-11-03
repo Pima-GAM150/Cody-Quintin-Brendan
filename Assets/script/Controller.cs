@@ -6,8 +6,8 @@ public class Controller : MonoBehaviour {
 
 	public Rigidbody2D body;
 
-	public float moveSpeed = 5f;
-	public float jumpPower = 5f;
+	public float moveSpeed = 10.3f;
+	public float jumpPower = 9f;
 
 	public SpriteRenderer spriteRenderer;
 	public Sprite[] walkingAnimation;
@@ -40,8 +40,7 @@ public class Controller : MonoBehaviour {
 				}
 			}
 		}
-
-		
+	}
 
 	void OnTriggerEnter2D( Collider2D otherCol ) {
 		if( otherCol.gameObject.layer == LayerMask.NameToLayer( "Powerups" ) ) {

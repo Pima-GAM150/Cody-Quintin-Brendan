@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Follow : MonoBehaviour {
-    public float moveSpeed = 3f;
+    public float moveSpeed = .1f;
     Transform leftWayPoint, rightWayPoint;
     Vector3 localScale;
     bool movingRight = true;
@@ -15,11 +16,14 @@ public class Follow : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         leftWayPoint = GameObject.Find ("LeftWayPoint").GetComponent<Transform>();
         rightWayPoint = GameObject.Find("RightWayPoint").GetComponent<Transform>();
+        leftWayPoint = GameObject.Find("LeftWayPoint (1)").GetComponent<Transform>();
+        rightWayPoint = GameObject.Find("RightWayPoint (1)").GetComponent<Transform>();
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    public virtual void Update () {
+
         if (transform.position.x > rightWayPoint.position.x)
             movingRight = false;
         if (transform.position.x < leftWayPoint.position.x)
@@ -48,4 +52,8 @@ public class Follow : MonoBehaviour {
 
     }
 
+    public static implicit operator Follow(float v)
+    {
+        throw new NotImplementedException();
+    }
 }
