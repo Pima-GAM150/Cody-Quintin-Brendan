@@ -41,34 +41,7 @@ public class Controller : MonoBehaviour {
 			}
 		}
 
-		// animation
-
-		if( xInput > 0f ) {
-			currentAnimation = walkingAnimation;
-			spriteRenderer.flipX = false;
-		}
-		if( xInput < 0f ) {
-			currentAnimation = walkingAnimation;
-			spriteRenderer.flipX = true;
-		}
-		if( xInput == 0f ) {
-			currentAnimation = idleAnimation;
-		}
-
-		if( animationTimer > animationFrameTime ) {
-			currentAnimIndex++;
-
-			if( currentAnimIndex >= currentAnimation.Length ) {
-				currentAnimIndex = 0;
-			}
-
-			spriteRenderer.sprite = currentAnimation[currentAnimIndex];
-
-			animationTimer = 0f;
-		}
-
-		animationTimer += Time.deltaTime;
-	}
+		
 
 	void OnTriggerEnter2D( Collider2D otherCol ) {
 		if( otherCol.gameObject.layer == LayerMask.NameToLayer( "Powerups" ) ) {
