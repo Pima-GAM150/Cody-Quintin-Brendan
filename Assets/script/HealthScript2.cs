@@ -13,9 +13,10 @@ public class HealthScript2 : MonoBehaviour {
     public void TakeDamage(float amount)
     {
         cur_health -= amount;
+
     }
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        if (cur_health <= 0) Destroy(this.gameObject);
+    }
 }

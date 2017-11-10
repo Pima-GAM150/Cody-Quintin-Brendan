@@ -29,13 +29,13 @@ public class Controller : MonoBehaviour {
 
 		float xInput = Input.GetAxis( "Horizontal" ) * moveSpeed;
 
-		if( body.velocity.y == 0f ) {
+		
 			body.AddForce( Vector2.right * xInput );
-		}
+		
 
 		if( Input.GetButtonDown("Vertical") ) {
-			if( body.velocity.y < 0.1f ) {
-				if( body.velocity.y >= 0f ) {
+			if( body.velocity.y < .5f ) {
+				if( body.velocity.y >= -.5f ) {
 					body.AddForce( Vector2.up * jumpPower, ForceMode2D.Impulse );
 				}
 			}
